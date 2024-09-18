@@ -10,15 +10,112 @@
 	<body>
 		<script src="../header.js"></script>
 
-		<h1>Green Anjou Pear</h1>
-        <h1>Red Anjou Pear</h1>
-        <h1>Bartlett Pear</h1>
-        <h1>Red Bartlett Pear</h1>
-        <h1>Bosc Pear</h1>
-        <h1>Comice Pear</h1>
-        <h1>Concorde Pear</h1>
-        <h1>Forelle Pear</h1>
-        <h1>Seckel Pear</h1>
-        <h1>Starkrimson Pear</h1>
+		<h1>Fresh Pears</h1>
+
+		<p class="description">
+			Lorem Ipsum Dolar Sit Amet
+		</p>
+
+		<div class="flex">
+			<div class="box">
+				<h2>Green Anjou Pear</h2>
+				<p>Description</p>
+				<p>
+					Cost: $XX.99<br>
+					Calories: XXX
+				</p>
+				<img class="food" src="../images/pearGreenAnjou.webp" alt="Green Anjou Pear">
+			</div>
+			<div class="box">
+				<h2>Red Anjou Pear</h2>
+				<p>Description</p>
+				<p>
+					Cost: $XX.99<br>
+					Calories: XXX
+				</p>
+				<img class="food" src="../images/pearRedAnjou.jpg" alt="Red Anjou Pear">
+			</div>
+			<div class="box">
+				<h2>Bartlett Pear</h2>
+				<p>Description</p>
+				<p>
+					Cost: $XX.99<br>
+					Calories: XXX
+				</p>
+				<img class="food" src="../images/pearBartlett.webp" alt="Bartlett Pear">
+			</div>
+			<div class="box">
+				<h2>Red Bartlett Pear</h2>
+				<p>Description</p>
+				<p>
+					Cost: $XX.99<br>
+					Calories: XXX
+				</p>
+				<img class="food" src="../images/pearRedBartlett.webp" alt="Red Bartlett Pear">
+			</div>
+			<div class="box">
+				<h2>Bosc Pear</h2>
+				<p>Description</p>
+				<p>
+					Cost: $XX.99<br>
+					Calories: XXX
+				</p>
+				<img class="food" src="../images/pearBosc.webp" alt="Bosc Pear">
+			</div>
+			<div class="box">
+				<h2>Comice Pear</h2>
+				<p>Description</p>
+				<p>
+					Cost: $XX.99<br>
+					Calories: XXX
+				</p>
+				<img class="food" src="../images/pearComice.webp" alt="Comice Pear">
+			</div>
+			<div class="box">
+				<h2>Concorde Pear</h2>
+				<p>Description</p>
+				<p>
+					Cost: $XX.99<br>
+					Calories: XXX
+				</p>
+				<img class="food" src="../images/pearConcorde.jpeg" alt="Concorde Pear">
+			</div>
+			<div class="box">
+				<h2>Forelle Pear</h2>
+				<p>Description</p>
+				<p>
+					Cost: $XX.99<br>
+					Calories: XXX
+				</p>
+				<img class="food" src="../images/pearForelle.avif" alt="Forelle Pear">
+			</div>
+			<div class="box">
+				<h2>Seckel Pear</h2>
+				<p>Description</p>
+				<p>
+					Cost: $XX.99<br>
+					Calories: XXX
+				</p>
+				<img class="food" src="../images/pearSeckel.webp" alt="Seckel Pear">
+			</div>
+			<div class="box">
+				<h2>Starkrimson Pear</h2>
+				<p>Description</p>
+				<p>
+					Cost: $XX.99<br>
+					Calories: XXX
+				</p>
+				<img class="food" src="../images/pearStarkrimson.webp" alt="Starkrimson Pear">
+			</div>
+    	</div>
+
+    	<script>
+    		for (let box of [...document.querySelectorAll(".box")]) {
+    			let p = box.children[2];
+    			const cost = "$" + (Math.floor(Math.random() * 5000)) + ".99";
+    			const calories = Math.floor(Math.random() * 4900) + 100;
+    			p.innerHTML = "Cost: " + cost + "<br>Calories: " + calories
+    		}
+    	</script>
     </body>
 </html>

@@ -12,7 +12,7 @@ h1 {
 	font-family: "Dancing Script", sans-serif;
 	font-size: 6em;
 	margin-top: 20px;
-	margin-bottom: 100px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 
@@ -34,6 +34,7 @@ h1 {
 	padding-left: 10px;
 	outline: 8px solid #FFECD1;
 	z-index: 1;
+	border-radius: 10px
 /*	margin: 8px;*/
 /*	padding-bottom: 20px;*/
 }
@@ -93,10 +94,10 @@ h1 {
 	color: #FF7D00;
 }
 
-.header .category:hover .subpages {
+/*.header .category:hover .subpages {
 	max-height: 100000px;
 	display: block;
-}
+}*/
 
 .food {
 	width: 400px;
@@ -115,12 +116,12 @@ h1 {
 
 .box {
 	width: 400px;
-	height: 400px;
+	height: 390px;
 	position: relative;
 	background: #ebd4b0;
 	text-align: center;
 	padding: 20px;
-	padding-top: 25px;
+	padding-top: 35px;
 	border-radius: 20px;
 }
 
@@ -136,4 +137,37 @@ h1 {
 	position: absolute;
 	bottom: 20px;
 	transform: translate(-50%, 0);
+}
+
+.description {
+	min-width: 500px;
+	width: 50%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+.logistics {
+	text-align: center;
+}
+
+.logistics p {
+	min-width: 500px;
+	width: 50%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+.logPhoto {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	min-width: 500px;
+	width: 50%;
+	display: block;
+	margin-bottom: 75px;
+	border-radius: 10px;
 }

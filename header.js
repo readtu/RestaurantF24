@@ -4,7 +4,7 @@ let path = location.href.substr(location.href.lastIndexOf("RestaurantF24") + 13)
 path = path.replace(/\/[a-z]+\.html/, "") + "/";
 let pos = path.replace(/[a-z]+/g, "..").substr(1);
 header.innerHTML = `
-<img src="${pos}images/pearLogo.png" class="logo" onclick="location.href = '${pos}index.html';">
+<img src="${pos}images/pearLogo.png" class="logo" onclick="location.href = '${pos}index.html';" id="headerClickLinkThing">
 <div class="category">
 	<a href="${pos}contact.html">Contact Us</a>
 </div>
@@ -53,3 +53,9 @@ header.innerHTML = `
 </div>
 `;
 document.body.appendChild(header);
+headerClickLinkThing.onmousedown = function (event) {
+	if (event.button != 2) return;
+
+	event.preventDefault();
+	location.href = pos + "secret.html";
+}
