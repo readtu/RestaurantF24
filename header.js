@@ -12,43 +12,15 @@ header.innerHTML = `
 	<a href="${pos}menu/logistics.html">Logistics</a>
 </div>
 <div class="category">
-	<a href="${pos}menu/desserts.html">Desserts</a>
-	<div class="subpages">
-		<a href="${pos}subpage0.html">Subpage 1-0</a>
-		<a href="${pos}subpage1.html">Subpage 1-1</a>
-		<a href="${pos}subpage2.html">Subpage 1-2</a>
-	</div>
+	<a href="${pos}about.html">About Us</a>
 </div>
 <div class="category">
-	<a href="${pos}menu/entrees.html">Entrees</a>
+	<a href="${pos}menu/index.html">Menu</a>
 	<div class="subpages">
-		<a href="${pos}menu/entrees.html#asianShrimpSkewers">Asian Shrimp Skewers</a>
-		<a href="${pos}menu/entrees.html#gorgonzolaGrilledPear">Gorgonzola Grilled Pear</a>
-		<a href="${pos}menu/entrees.html#mascarponeBaconGrilled">Mascarpone Bacon Grilled</a>
-		<a href="${pos}menu/entrees.html#pearLambFlatbread">Pear Lamb Flatbread</a>
-		<a href="${pos}menu/entrees.html#smokedPears">Smoked Pears</a>
-		<a href="${pos}menu/entrees.html#stuffedGrilledPears">Stuffed Grilled Pears</a>
-		<a href="${pos}menu/entrees.html#turkeyAndPearBurger">Turkey and Pear Burger</a>
-	</div>
-</div>
-<div class="category">
-	<a href="${pos}menu/pear.html">Fresh Pears</a>
-	<div class="subpages">
-		<a href="${pos}subpage0.html">Subpage 2-0</a>
-		<a href="${pos}subpage1.html">Subpage 2-1</a>
-		<a href="${pos}subpage2.html">Subpage 2-2</a>
-	</div>
-</div>
-<div class="category">
-	<a href="${pos}menu/special.html">Specials</a>
-	<div class="subpages">
-		<a href="${pos}menu/special.html#special0">Fancy Fantasy Pear</a>
-		<a href="${pos}menu/special.html#special1">Pear Pie</a>
-		<a href="${pos}menu/special.html#special2">Pear Cupcake</a>
-		<a href="${pos}menu/special.html#special3">Jar 'o' Pear</a>
-		<a href="${pos}menu/special.html#special4">Pear Paint</a>
-		<a href="${pos}menu/special.html#special5">Pear Tower</a>
-		<a href="${pos}menu/special.html#special6">Pear, Nut & Fruit Charcuterie Board</a>
+		<a href="${pos}menu/desserts.html">Desserts</a>
+		<a href="${pos}menu/entrees.html">Entrees</a>
+		<a href="${pos}menu/pear.html">Fresh Pears</a>
+		<a href="${pos}menu/special.html">Specials</a>
 	</div>
 </div>
 `;

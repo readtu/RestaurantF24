@@ -72,8 +72,8 @@ h1 {
 .header .category .subpages {
 	width: 100%;
 	text-align: center;
-	display: flex;
 	flex-direction: column;
+	flex-wrap: nowrap;
 	align-items: center;
 	max-height: 0;
 	overflow: hidden;
@@ -94,10 +94,10 @@ h1 {
 	color: #FF7D00;
 }
 
-/*.header .category:hover .subpages {
+.header .category:hover .subpages {
 	max-height: 100000px;
-	display: block;
-}*/
+	display: flex;
+}
 
 .food {
 	width: 400px;
