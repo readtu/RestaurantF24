@@ -35,15 +35,14 @@ h1 {
 	image-rendering: pixelated;
 	height: 100px;
 	cursor: pointer;
-	filter: invert(1);
 }
 
 .header .logo:hover {
-	filter: invert(0.75);
+	filter: invert(0.25);
 }
 
 .header .logo:active {
-	filter: invert(1);
+	filter: invert(0.0);
 }
 
 .header .category {
