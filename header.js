@@ -9,6 +9,9 @@ header.innerHTML = `
 	<a href="${pos}contact.html">Contact Us</a>
 </div>
 <div class="category">
+	<a href="${pos}menu/logistics.html">Logistics</a>
+</div>
+<div class="category">
 	<a href="${pos}menu/desserts.html">Desserts</a>
 	<div class="subpages">
 		<a href="${pos}subpage0.html">Subpage 1-0</a>
