@@ -1,7 +1,7 @@
 const header = document.createElement("div");
 header.classList.add("header");
 header.innerHTML = `
-<img src="pearLogo.png" class="logo" onclick="location.href = 'index.html';">
+<img src="../images/pearLogo.png" class="logo" onclick="location.href = 'index.html';">
 <div class="category">
 	<a href="menu/desserts.html">Desserts</a>
 	<div class="subpages">
