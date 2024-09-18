@@ -19,9 +19,13 @@ header.innerHTML = `
 <div class="category">
 	<a href="${pos}menu/entrees.html">Entrees</a>
 	<div class="subpages">
-		<a href="${pos}subpage0.html">Subpage 2-0</a>
-		<a href="${pos}subpage1.html">Subpage 2-1</a>
-		<a href="${pos}subpage2.html">Subpage 2-2</a>
+		<a href="${pos}menu/entrees.html#asianShrimpSkewers">Asian Shrimp Skewers</a>
+		<a href="${pos}menu/entrees.html#gorgonzolaGrilledPear">Gorgonzola Grilled Pear</a>
+		<a href="${pos}menu/entrees.html#mascarponeBaconGrilled">Mascarpone Bacon Grilled</a>
+		<a href="${pos}menu/entrees.html#pearLambFlatbread">Pear Lamb Flatbread</a>
+		<a href="${pos}menu/entrees.html#smokedPears">Smoked Pears</a>
+		<a href="${pos}menu/entrees.html#stuffedGrilledPears">Stuffed Grilled Pears</a>
+		<a href="${pos}menu/entrees.html#turkeyAndPearBurger">Turkey and Pear Burger</a>
 	</div>
 </div>
 <div class="category">

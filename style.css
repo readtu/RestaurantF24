@@ -2,7 +2,7 @@
 
 body {
 	background: #FFECD1;
-	margin-top: 110px;
+/*	margin-top: 110px;*/
 	color: #001524;
 	font-family: "Nunito", sans-serif;
 }
@@ -10,24 +10,29 @@ body {
 h1 {
 	font-weight: 700;
 	font-family: "Dancing Script", sans-serif;
-	font-size: 4em;
+	font-size: 6em;
+	margin-top: 20px;
+	margin-bottom: 5px;
 }
 
 .header {
+	box-sizing: border-box;
 	background: #78290F;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 15px;
-	position: absolute;
+	position: sticky;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: 8px;
 	width: 100%;
 	min-height: 100px;
 	padding: 3px;
 	padding-left: 10px;
+	outline: 8px solid #FFECD1;
+/*	margin: 8px;*/
 /*	padding-bottom: 20px;*/
 }
 
@@ -56,7 +61,7 @@ h1 {
 }
 
 .header .category a {
-	color: #78290F;;
+	color: #78290F;
 }
 
 .header .category .subpages {
@@ -88,4 +93,24 @@ h1 {
 .food {
 	max-width: 400px;
 	max-height: 400px;
+}
+
+
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+    justify-content: center;
+}
+
+.box {
+	width: 400px;
+	height: 450px;
+	position: relative;
+}
+
+.box img {
+	position: absolute;
+	bottom: 0;
 }
