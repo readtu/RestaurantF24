@@ -1,8 +1,9 @@
 const header = document.createElement("div");
 header.classList.add("header");
-let path = location.href.substr(location.href.lastIndexOf("RestaurantF24") + 13).replace(/#[a-z0-9_]+/, "");
-path = path.replace(/\/[a-z]+\.html/, "") + "/";
-let pos = path.replace(/[a-z]+/g, "..").substr(1);
+// let path = location.href.substr(location.href.lastIndexOf("RestaurantF24") + 13).replace(/#[a-z0-9_]+/, "");
+// path = path.replace(/\/[a-z]+\.html/, "") + "/";
+// let pos = path.replace(/[a-z]+/g, "..").substr(1);
+const pos = HEADER_PATH;
 header.innerHTML = `
 <img src="${pos}images/pearLogo.png" class="logo" onclick="location.href = '${pos}index.html';" id="headerClickLinkThing">
 <div class="category">
