@@ -3,14 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>desserts</title>
+		<title>Desserts</title>
 
 		<link rel="stylesheet" href="../style.css">
 	</head>
 	<body>
+		<script src="headerPath.js"></script>
 		<script src="../header.js"></script>
 
-		<h1>desserts</h1>
+		<h1>Desserts</h1>
 
 		<p class="description">
 			We all love our desserts! But what's the sweetest treat of all? Why, pear desserts of course. We have a variety of
@@ -28,8 +29,8 @@
 
 		<div class="flex">
 			<div class="box">
-				<h2>Name</h2>
-				<p>Description</p>
+				<h2>Cinnamon Baked Pear</h2>
+				<p>A pear, sliced in two, baked in cinnamon, and served with a side of ice cream.</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXXX
@@ -37,8 +38,8 @@
 				<img class="food" src="../images/cinnamonBaked.jpg" alt="cinnamon baked pear">
 			</div>
 			<div class="box">
-				<h2>Name</h2>
-				<p>Description</p>
+				<h2>Pear Custard Pie</h2>
+				<p>Pear custard with an outer sugary crust enveloping it</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXXX
@@ -46,8 +47,10 @@
 				<img class="food" src="../images/custardPie.jpg" alt="pear custard pie">
 			</div>
 			<div class="box">
-				<h2>Name</h2>
-				<p>Description</p>
+				<h2>Pear Panna Cotta Cake</h2>
+				<p>
+					Thick sweet gelatin infused with pear, with a top coating of pear or strawberry strips.
+				</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXXX
@@ -55,8 +58,10 @@
 				<img class="food" src="../images/pannaCottaCake.jpg" alt="pear panna cotta cake">
 			</div>
 			<div class="box">
-				<h2>Name</h2>
-				<p>Description</p>
+				<h2>Pear Cobbler</h2>
+				<p>
+					A cobbler made of pears. Optional ice cream siding.
+				</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXXX
@@ -64,8 +69,10 @@
 				<img class="food" src="../images/pearCobbler.jpg" alt="pear cobbler">
 			</div>
 			<div class="box">
-				<h2>Name</h2>
-				<p>Description</p>
+				<h2>Pear Pudding Cake</h2>
+				<p>
+					A scrumptious conglomeration of pear and vanilla pudding, topped with powder.
+				</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXXX
@@ -73,8 +80,10 @@
 				<img class="food" src="../images/puddingCake.jpg" alt="pear pudding cake">
 			</div>
 			<div class="box">
-				<h2>Name</h2>
-				<p>Description</p>
+				<h2>Red Wine Poached Pear</h2>
+				<p>
+					A pear that has been soaked in red wine for several years.
+				</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXXX
@@ -82,8 +91,10 @@
 				<img class="food" src="../images/redWinePoached.jpg" alt="red wine poached pear">
 			</div>
 			<div class="box">
-				<h2>Name</h2>
-				<p>Description</p>
+				<h2>Vol Au Vents (with pear)</h2>
+				<p>
+					Pastries topped with molten pear and basil leaves.
+				</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXXX
@@ -91,5 +102,14 @@
 				<img class="food" src="../images/volAuVents.png" alt="vol-au-vents with pear">
 			</div>
 		</div>
+
+    	<script>
+    		for (let box of [...document.querySelectorAll(".box")]) {
+    			let p = box.children[2];
+    			const cost = "$" + (Math.floor(Math.random() * 5000)) + ".99";
+    			const calories = Math.floor(Math.random() * 4900) + 100;
+    			p.innerHTML = "Cost: " + cost + "<br>Calories: " + calories
+    		}
+    	</script>
 	</body>
 </html>

@@ -171,3 +171,7 @@ h1 {
 	margin-bottom: 75px;
 	border-radius: 10px;
 }
+
+ul {
+	list-style-position: inside;
+}
