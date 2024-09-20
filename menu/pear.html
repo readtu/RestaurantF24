@@ -20,7 +20,7 @@
 		<div class="flex">
 			<div class="box">
 				<h2>Green Anjou Pear</h2>
-				<p>Description</p>
+				<p>A pear</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXX
@@ -29,7 +29,7 @@
 			</div>
 			<div class="box">
 				<h2>Red Anjou Pear</h2>
-				<p>Description</p>
+				<p>A pear</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXX
@@ -38,7 +38,7 @@
 			</div>
 			<div class="box">
 				<h2>Bartlett Pear</h2>
-				<p>Description</p>
+				<p>A pear</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXX
@@ -47,7 +47,7 @@
 			</div>
 			<div class="box">
 				<h2>Red Bartlett Pear</h2>
-				<p>Description</p>
+				<p>A pear</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXX
@@ -56,7 +56,7 @@
 			</div>
 			<div class="box">
 				<h2>Bosc Pear</h2>
-				<p>Description</p>
+				<p>A pear</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXX
@@ -65,7 +65,7 @@
 			</div>
 			<div class="box">
 				<h2>Comice Pear</h2>
-				<p>Description</p>
+				<p>A pear</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXX
@@ -74,7 +74,7 @@
 			</div>
 			<div class="box">
 				<h2>Concorde Pear</h2>
-				<p>Description</p>
+				<p>A pear</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXX
@@ -83,7 +83,7 @@
 			</div>
 			<div class="box">
 				<h2>Forelle Pear</h2>
-				<p>Description</p>
+				<p>A pear</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXX
@@ -92,7 +92,7 @@
 			</div>
 			<div class="box">
 				<h2>Seckel Pear</h2>
-				<p>Description</p>
+				<p>A pear</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXX
@@ -101,7 +101,7 @@
 			</div>
 			<div class="box">
 				<h2>Starkrimson Pear</h2>
-				<p>Description</p>
+				<p>A pear</p>
 				<p>
 					Cost: $XX.99<br>
 					Calories: XXX
@@ -111,11 +111,15 @@
     	</div>
 
     	<script>
+    		const desc = [ "yummy", "delicious", "tasty", "gorgeous", "happy" ];
     		for (let box of [...document.querySelectorAll(".box")]) {
     			let p = box.children[2];
     			const cost = "$" + (Math.floor(Math.random() * 5000)) + ".99";
     			const calories = Math.floor(Math.random() * 4900) + 100;
     			p.innerHTML = "Cost: " + cost + "<br>Calories: " + calories
+
+    			let p1 = box.children[1];
+    			p1.innerText = "A " + desc[Math.floor(Math.random() * desc.length)] + " pear.";
     		}
     	</script>
     </body>
